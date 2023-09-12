@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>on placing cursor</title>
+    <style>
+        #contain {
+            border: 1.5px solid black;
+            padding-top: 30px;
+            display: inline-block;
+            width: 700px;
+            height: 500px;
+            margin-left: 250px;
+            margin-right: 100px;
+            margin-top: 50px;
+        }
+
+        #d1, #d2, #d3, #d4 {
+            display: none;
+        }
+
+        #b1 {
+            width: 50px;
+            height: 50px;
+            background-color: rgba(5, 148, 81, 0.906);
+            border-radius: 0px 5px 5px 0px;
+            border: 0px;
+        }
+
+        #b1:hover~#d1 {
+            display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 80px;
+            padding: 10px;
+        }
+
+        #b2 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(22, 163, 219);
+            border-radius: 0px 5px 5px 0px;
+            border: 0px;
+        }
+
+        #b2:hover~#d2 {
+            display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 80px;
+            padding: 10px;
+        }
+
+        #b3 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(247, 84, 55);
+            border-radius: 0px 5px 5px 0px;
+            border: 0px;
+        }
+
+        #b3:hover~#d3 {
+            display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 80px;
+            padding: 10px;
+        }
+
+        #b4 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(104, 103, 103);
+            border-radius: 0px 5px 5px 0px;
+            border: 0px;
+        }
+
+        #b4:hover~#d4 {
+            display: inline-block;
+            position: absolute;
+            left: 400px;
+            top: 80px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contain">
+        <button id="b1"></button><br>
+        <button id="b2"></button><br>
+        <button id="b3"></button><br>
+        <button id="b4"></button>
+        <div id="d1">
+            <h1>Hoverable Sidenav Buttons(B1)</h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+        <div id="d2">
+            <h1>Hoverable Sidenav Buttons(B2) </h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+        <div id="d3">
+            <h1>Hoverable Sidenav Buttons(B3)</h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+        <div id="d4">
+            <h1>Hoverable Sidenav Buttons(B4)</h1>
+            <p>Hover over the buttons in the left side navigation to open them</p>
+        </div>
+    </div>
+</body>
+
+</html>
